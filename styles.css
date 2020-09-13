@@ -24,8 +24,9 @@ ul {
 .sectionWhite {
     background-color: white;
 }
-i {
-    -webkit-transform: rotate(180deg)
+a:focus > i {
+    -webkit-transform: rotate(180deg);
+    -webkit-transition-duration: .5s;
 }
 /* header*/
 /*header {
