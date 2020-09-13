@@ -24,9 +24,8 @@ ul {
 .sectionWhite {
     background-color: white;
 }
-a {
-    text-decoration: none;
-    color: white;
+i {
+    -webkit-transform: rotate(180deg)
 }
 /* header*/
 /*header {
@@ -53,10 +52,12 @@ a {
     width: 25%;
 }
 ul li a {
-    padding: 2rem;
+    padding: 1.5rem;
     font-weight: bold;
     white-space: nowrap; 
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
 }
 #nav-barOpenKast span {
     padding: 5px 10px 5px 10px;
@@ -72,6 +73,7 @@ ul li a {
 }
 #nav-barPremium span:hover {
     /*text-decoration: underline white;*/
+    /*transition-duration: .5s;*/
     border: 2px solid; 
     border-color: transparent transparent white transparent;
     padding: 0 0 3px 0;
