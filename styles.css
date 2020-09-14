@@ -1,3 +1,4 @@
+
 /* common properties */
 h1 {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,10 +25,7 @@ ul {
 .sectionWhite {
     background-color: white;
 }
-a:focus > i {
-    -webkit-transform: rotate(180deg);
-    -webkit-transition-duration: .5s;
-}
+
 /* header*/
 /*header {
     height: 100px;
@@ -48,6 +46,7 @@ a:focus > i {
     display: grid;
     grid-template-columns: 4fr 1fr .05fr; /*6fr 2fr 3fr*/
     align-items: center;
+    overflow: hidden;
 }
 #logo {
     width: 25%;
@@ -80,9 +79,102 @@ ul li a {
     padding: 0 0 3px 0;
     margin: -2px;
 }
+/* dropdown menus */
+a:focus > i {
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+a > i {
+    transform: rotate(0deg);
+    transition-duration: .5s;
+}
+.dropdownAbout {
+    display: block; /* change to 'block' to see menu */
+    position: absolute;
+    top: 65px;
+    padding: 15px 45px 15px 15px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.dropdownAbout a {
+    float: none;
+    color: #a5a5ae;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dropdownAbout i {
+    transform: none !important;
+}
+.dropdownAbout a:hover {
+    background-color: rgb(236, 236, 236);
+    text-decoration: underline;
+}
+
+.dropdownHelp {
+    display: none; /* change to 'block' to see menu */
+    position: absolute;
+    top: 65px;
+    padding: 15px 45px 15px 15px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 5px;
+    margin-left: 120px;
+}
+
+.dropdownHelp a {
+    float: none;
+    color: #a5a5ae;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdownHelp i {
+    transform: none !important;
+}
+.dropdownHelp a:hover {
+    background-color: rgb(236, 236, 236);
+    text-decoration: underline;
+}
+
+.dropdownCommunity {
+    display: none; /* change to 'block' to see menu */
+    position: absolute;
+    top: 65px;
+    padding: 15px 45px 15px 15px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+.dropdownCommunity a {
+    float: none;
+    color: #a5a5ae;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdownCommunity i {
+    transform: none !important;
+}
+.dropdownCommunity a:hover {
+    background-color: rgb(236, 236, 236);
+    text-decoration: underline;
+}
+
 /* body */
 body {
-    background-color: darkblue;
+    background-color: white;
     background-image: url(assets/gradient-violet-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -126,6 +218,10 @@ body {
     height: 40px;
     border-radius: 3px;
     background-color: #FE9000;
+}
+.openKastParent:hover {
+    border: solid 3px #FE9000;
+    margin: -1px;
 }
 .openKastButton a {
     display: flex;
@@ -173,4 +269,14 @@ body {
     color: #434146;
     font-style: italic;
     margin-left: 33%;
+}
+/* section three */
+#sectionThree {
+    background-image: url(assets/green-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left top;
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
 }
