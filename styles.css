@@ -26,16 +26,15 @@ ul {
     background-color: white;
 }
 
-/* header*/
-/*header {
+header {
     height: 100px;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     display: grid;
     z-index: 10;
     transition: top 0.3s ease-in-out;
-}*/
+}
 #nav-bar {
     background: transparent;
     margin-left: 30px;
@@ -89,7 +88,7 @@ a > i {
     transition-duration: .5s;
 }
 .dropdownAbout {
-    display: block; /* change to 'block' to see menu */
+    display: none; /* change to 'block' to see menu */
     position: absolute;
     top: 65px;
     padding: 15px 45px 15px 15px;
